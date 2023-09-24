@@ -13,6 +13,10 @@ player = Player()
 car = CarManager()
 level = Scoreboard()
 
+
+screen.listen()
+screen.onkey(player.move, "Up")
+
 # Game loop
 game_is_on = True
 while game_is_on:
