@@ -33,9 +33,9 @@ while game_is_on:
             game.game_over()
 
     # Update level
-    if player.ycor() >= 260:
+    if player.is_at_finish_line():
         game.update_level()
         player.reset_position()
-
+        car_manager.increase_car_speed()
 
 screen.exitonclick()
